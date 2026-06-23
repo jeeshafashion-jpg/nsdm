@@ -1175,3 +1175,162 @@ a{color:var(--nsdm-blue)}
     width: 78px !important;
   }
 }
+
+/* Fix 5: compact mobile course detail + screenshot sharing */
+.nsdm-course-share-action {
+  margin: 18px 0 24px;
+  text-align: center;
+}
+
+.nsdm-course-share-btn {
+  width: 100%;
+  min-height: 50px;
+  border: 0;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #1fae59, #128c45);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 900;
+  cursor: pointer;
+  box-shadow: 0 10px 24px rgba(31, 174, 89, .22);
+}
+
+.nsdm-course-share-btn:hover,
+.nsdm-course-share-btn:focus-visible {
+  background: linear-gradient(135deg, #128c45, #0f7338);
+}
+
+@media (max-width: 720px) {
+  body.nsdm-course-detail-page .nsdm-page-head {
+    display: none !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-main {
+    padding-block: 12px 36px !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-course-card {
+    margin-bottom: 10px !important;
+    padding: 16px !important;
+    border: 2px solid #b9cdf4 !important;
+    border-radius: 18px !important;
+    background: #ffffff !important;
+    box-shadow: 0 8px 22px rgba(16, 47, 112, .08) !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-course-title {
+    font-size: 23px !important;
+    line-height: 1.15 !important;
+    margin: 10px 0 6px !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-course-description {
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+    margin-bottom: 8px !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-course-code {
+    min-height: 34px !important;
+    padding: 7px 14px !important;
+    font-size: 15px !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-course-facts {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 8px !important;
+    margin-top: 12px !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-course-facts div {
+    min-height: 0 !important;
+    padding: 9px 10px !important;
+    border-radius: 11px !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-course-facts dt {
+    font-size: 10px !important;
+    margin-bottom: 2px !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-course-facts dd {
+    font-size: 13px !important;
+    line-height: 1.25 !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-course-nav-buttons:not(.nsdm-course-nav-buttons--bottom) {
+    display: none !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-section-heading {
+    font-size: 24px !important;
+    margin-bottom: 12px !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-panel:has(.nsdm-subject-table) {
+    padding: 14px !important;
+    border: 2px solid #d8e1ee !important;
+    border-radius: 16px !important;
+    box-shadow: 0 8px 22px rgba(16, 47, 112, .07) !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-subject-table {
+    display: table !important;
+    width: 100% !important;
+    table-layout: fixed !important;
+    border-collapse: collapse !important;
+    background: #ffffff !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-subject-table thead {
+    display: table-header-group !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-subject-table tbody {
+    display: table-row-group !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-subject-table tr {
+    display: table-row !important;
+    margin: 0 !important;
+    border: 0 !important;
+    box-shadow: none !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-subject-table th,
+  body.nsdm-course-detail-page .nsdm-subject-table td {
+    display: table-cell !important;
+    padding: 7px 5px !important;
+    border: 1px solid #d8e1ee !important;
+    font-size: 11px !important;
+    line-height: 1.35 !important;
+    vertical-align: top !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-subject-table td::before {
+    display: none !important;
+    content: none !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-subject-table th:nth-child(1),
+  body.nsdm-course-detail-page .nsdm-subject-table td:nth-child(1) {
+    width: 42px !important;
+    text-align: center !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-subject-table th:nth-child(2),
+  body.nsdm-course-detail-page .nsdm-subject-table td:nth-child(2) {
+    width: 88px !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-course-nav-buttons--bottom {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 8px !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-course-nav-buttons--bottom .nsdm-nav-button {
+    min-height: 38px !important;
+    padding: 8px !important;
+    font-size: 12px !important;
+  }
+}
