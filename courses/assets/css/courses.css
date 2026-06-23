@@ -1334,3 +1334,22 @@ a{color:var(--nsdm-blue)}
     font-size: 12px !important;
   }
 }
+
+/* Fix 6: make course subject column clearer and semi-bold */
+.nsdm-subject-table td:nth-child(3) {
+  font-weight: 700 !important;
+  color: #13223a !important;
+}
+
+@media (max-width: 720px) {
+  body.nsdm-course-detail-page .nsdm-subject-table td:nth-child(3) {
+    font-size: 13px !important;
+    font-weight: 750 !important;
+    color: #13223a !important;
+    line-height: 1.45 !important;
+  }
+
+  body.nsdm-course-detail-page .nsdm-subject-table td:nth-child(2) {
+    font-weight: 900 !important;
+  }
+}
