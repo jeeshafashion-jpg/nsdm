@@ -1,0 +1,15 @@
+wp-config.php
+*.sql
+*.zip
+*.tar.gz
+*.gz
+*.wpress
+.env
+error_log
+backup/
+backups/
+wp-content/ai1wm-backups/
+node_modules/
+vendor/
+.DS_Store
+Thumbs.db

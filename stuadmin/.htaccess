@@ -1,0 +1,12 @@
+# TEMP DEBUG .htaccess for /stuadmin/
+
+# Ensure Apache allows access here
+Require all granted
+
+# Serve existing files directly
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^ - [L]
+
+# Custom 403 handler so you can see PHP output even if 403 happens
+ErrorDocument 403 /stuadmin/why403.php

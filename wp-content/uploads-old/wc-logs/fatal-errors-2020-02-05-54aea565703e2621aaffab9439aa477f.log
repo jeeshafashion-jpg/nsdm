@@ -1,0 +1,9 @@
+2020-02-05T09:55:23+00:00 CRITICAL Uncaught Error: Call to undefined function learndash_get_option() in /home/nsditese/nehruskilldevelopmentmission.com/wp-content/plugins/u-shortcodes/shortcodes/post-carousel.php:147
+Stack trace:
+#0 /home/nsditese/nehruskilldevelopmentmission.com/wp-includes/shortcodes.php(325): parse_u_post_carousel(Array, '', 'u_post_carousel')
+#1 [internal function]: do_shortcode_tag(Array)
+#2 /home/nsditese/nehruskilldevelopmentmission.com/wp-includes/shortcodes.php(199): preg_replace_callback('/\\[(\\[?)(u_post...', 'do_shortcode_ta...', '[u_post_carouse...')
+#3 /home/nsditese/nehruskilldevelopmentmission.com/wp-content/plugins/js_composer/include/helpers/helpers.php(240): do_shortcode('[u_post_carouse...')
+#4 /home/nsditese/nehruskilldevelopmentmission.com/wp-content/plugins/js_composer/include/templates/shortcodes/vc_column.php(94): wpb_js_remove_wpautop('[u_post_carouse...')
+#5 /home/nsditese/nehruskilldevelopmentmission.com/wp-content/plugins/js_composer/include/classes/shortcodes/core/class-wpbakeryshortcode.php(267) in /home/nsditese/nehruskilldevelopmentmission.com/wp-content/plugins/u-shortcodes/shortcodes/post-carousel.php on line 147
+

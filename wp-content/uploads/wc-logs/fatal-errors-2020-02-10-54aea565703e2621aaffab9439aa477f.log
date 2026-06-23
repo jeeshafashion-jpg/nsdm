@@ -1,0 +1,2 @@
+2020-02-10T10:28:15+00:00 CRITICAL syntax error, unexpected 'echo' (T_ECHO) in /home/nsditese/nehruskilldevelopmentmission.com/wp-content/plugins/easy-code-manager/framework/php/evaluator/evaluator.inc.php(51) : eval()'d code on line 3
+

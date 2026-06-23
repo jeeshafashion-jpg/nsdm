@@ -1,0 +1,323 @@
+/*!
+ * ========= INFORMATION ============================
+ * - document:  Button Generator Pro
+ * - brand:     Wow-Company
+ * - brand-url: https://wow-company.com/
+ * - store-url: https://wow-estore.com/
+ * - author:    Dmytro Lobov
+ * - url:       https://wow-estore.com/item/button-generator-pro/
+ * ====================================================== */
+.btg-button {
+  text-decoration: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  visibility: visible !important;
+  box-sizing: border-box;
+}
+
+.btg-button__group {
+  --group-gap: 8px;
+  --group-direction: row;
+  --group-align-items: center;
+  display: flex;
+  gap: var(--group-gap);
+  flex-direction: var(--group-direction);
+  align-items: var(--group-align-items);
+  margin-block: 1rem;
+  flex-wrap: wrap;
+}
+
+.btg-button {
+  --position: relative;
+  --direction: row;
+  --gap: 8px;
+  --width: 100px;
+  --height: 50px;
+  --z-index: 999;
+  --color: #ffffff;
+  --background: #1f9ef8;
+  --hover-color: #ffffff;
+  --hover-background: #0090f7;
+  --icon-hover-color: #ffffff;
+  --radius: 1px;
+  --border-style: none;
+  --border-color: #383838;
+  --border-width: 1px;
+  --shadow: none;
+  --font-size: 16px;
+  --font-family: inherit;
+  --font-weight: normal;
+  --font-style: normal;
+  --rotate: 0deg;
+  --transition-duration: 0.2s;
+  --transition-function: ease;
+  position: var(--position);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap);
+  flex-direction: var(--direction);
+  width: var(--width);
+  height: var(--height);
+  z-index: var(--z-index);
+  color: var(--color) !important;
+  background: var(--background) !important;
+  box-shadow: var(--shadow);
+  border-radius: var(--radius);
+  border-style: var(--border-style);
+  border-width: var(--border-width);
+  border-color: var(--border-color);
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  font-weight: var(--font-weight);
+  font-style: var(--font-style);
+  cursor: pointer;
+  rotate: var(--rotate);
+  transition-duration: var(--transition-duration);
+  transition-property: all;
+  transition-timing-function: var(--transition-function);
+}
+.btg-button:active, .btg-button:focus, .btg-button:hover {
+  color: var(--hover-color) !important;
+  background: var(--hover-background) !important;
+  border-color: var(--border-color);
+}
+.btg-button:active .btg-icon, .btg-button:focus .btg-icon, .btg-button:hover .btg-icon {
+  color: var(--icon-hover-color) !important;
+}
+.btg-button .btg-icon {
+  --rotate: 0deg;
+  --font-size: 16px;
+  --color: #ffffff;
+  rotate: var(--rotate);
+  font-size: var(--font-size);
+  color: var(--color);
+}
+.btg-button img.btg-icon {
+  --rotate: 0deg;
+  --font-size: 16px;
+  rotate: var(--rotate);
+  max-width: var(--font-size);
+  max-height: var(--font-size);
+}
+.btg-button .badge {
+  --width: 25px;
+  --height: 25px;
+  --color: #ffffff;
+  --background: #e95645;
+  --radius: 25px;
+  --border-style: none;
+  --border-color: #ffffff;
+  --border-width: 1px;
+  --font-size: 12px;
+  --font-family: inherit;
+  --font-weight: normal;
+  --font-style: normal;
+  --top: -10px;
+  --right: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--width);
+  height: var(--height);
+  position: absolute;
+  border-radius: var(--radius);
+  border-style: var(--border-style);
+  border-color: var(--border-color);
+  border-width: var(--border-width);
+  color: var(--color) !important;
+  background-color: var(--background) !important;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight);
+  font-style: var(--font-style);
+  text-align: center;
+  top: var(--top);
+  right: var(--right);
+}
+.btg-button.btn-animation {
+  --duration: 1s;
+  --delay: 1s;
+  --count: infinite;
+  animation-duration: var(--duration);
+  animation-delay: var(--delay);
+  animation-iteration-count: var(--count);
+}
+.btg-button .fa-rotate-90 {
+  rotate: 90deg;
+}
+.btg-button .fa-rotate-180 {
+  rotate: 180deg;
+}
+.btg-button .fa-rotate-270 {
+  rotate: 270deg;
+}
+
+.btg-center {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.btg-topLeft {
+  top: 0;
+  left: 0;
+}
+
+.btg-topCenter {
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.btg-topRight {
+  top: 0;
+  right: 0;
+}
+
+.btg-bottomLeft {
+  bottom: 0;
+  left: 0;
+}
+
+.btg-bottomCenter {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.btg-bottomRight {
+  bottom: 0;
+  right: 0;
+}
+
+.btg-right {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.btg-left {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto 0;
+}
+
+.btg-rotate-90 {
+  rotate: 90deg;
+}
+
+.btg-rotate-180 {
+  rotate: 180deg;
+}
+
+.btg-rotate-270 {
+  rotate: 270deg;
+}
+
+.btg-button .btn-tooltiptext {
+  visibility: hidden;
+  box-sizing: border-box;
+  min-width: 50px;
+  width: inherit;
+  line-height: 1.2;
+  background-color: #555;
+  color: #fff;
+  border-radius: 4px;
+  padding: 5px 10px;
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.875rem;
+}
+
+.btg-button .btn-tooltiptext::after {
+  content: "";
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+}
+
+.btg-button:hover .btn-tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* Top position */
+.btn-tooltiptext.tooltip-top {
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn-tooltiptext.tooltip-top::after {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Bottom position */
+.btn-tooltiptext.tooltip-bottom {
+  top: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.btn-tooltiptext.tooltip-bottom::after {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-color: transparent transparent #555 transparent;
+}
+
+/* Left position */
+.btn-tooltiptext.tooltip-left {
+  top: 50%;
+  right: 110%;
+  transform: translateY(-50%);
+}
+
+.btn-tooltiptext.tooltip-left::after {
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  border-color: transparent transparent transparent #555;
+}
+
+/* Right position */
+.btn-tooltiptext.tooltip-right {
+  top: 50%;
+  left: 110%;
+  transform: translateY(-50%);
+}
+
+.btn-tooltiptext.tooltip-right::after {
+  top: 50%;
+  right: 100%;
+  transform: translateY(-50%);
+  border-color: transparent #555 transparent transparent;
+}
+
+body.has-google-translate {
+  top: 0 !important;
+}
+body.has-google-translate .skiptranslate {
+  display: none;
+}

@@ -1,0 +1,29 @@
+<b>5.7.1  SINGLE DOMAIN SSL 1 - https://nehruskilldevelopmentmission.com</b>
+Domain covered:
+["nehruskilldevelopmentmission.com","www.nehruskilldevelopmentmission.com"]
+
+[06-11-2021 09:00:46] :
+LEClient finished constructing
+
+[06-11-2021 09:00:46] :
+Order data for 'nehruskilldevelopmentmission.com' invalid. Deleting order data and creating new order.
+
+[06-11-2021 09:00:48] :
+Created order for 'nehruskilldevelopmentmission.com'.
+
+Offering manual verification procedure. 
+
+Local check - All HTTP challenges verified
+
+[06-11-2021 09:03:08] :
+LEClient finished constructing
+
+Finalizing the order
+[06-11-2021 09:03:13] :
+Order for 'nehruskilldevelopmentmission.com' finalized.
+
+Getting SSL certificates
+[06-11-2021 09:03:13] :
+Certificate for 'nehruskilldevelopmentmission.com' saved
+
+<h2>SSL Certificate generated successfully!</h2>
