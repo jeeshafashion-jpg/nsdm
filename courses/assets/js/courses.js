@@ -106,7 +106,7 @@ document.addEventListener("DOMContentLoaded",function(){
     });
 
     var render = document.createElement("div");
-    render.style.width = "760px";
+    render.style.width = "880px";
     render.style.padding = "26px";
     render.style.background = "#f6f9ff";
     render.style.border = "4px solid #173f93";
@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded",function(){
     html += '</div>';
 
     html += '<h2 style="margin:0 0 10px;color:#102f70;font-size:28px;">Course Subjects</h2>';
-    html += '<table style="width:100%;border-collapse:collapse;background:#fff;border:1px solid #d8e1ee;font-size:15px;">';
+html += '<table style="width:100%;border-collapse:collapse;background:#fff;border:1px solid #d8e1ee;font-size:21px;">';
     html += '<thead><tr>';
     html += '<th style="background:#1f4599;color:#fff;padding:9px;border:1px solid #1f4599;text-align:left;width:58px;">S.No</th>';
     html += '<th style="background:#1f4599;color:#fff;padding:9px;border:1px solid #1f4599;text-align:left;width:130px;">Code</th>';
@@ -148,10 +148,9 @@ document.addEventListener("DOMContentLoaded",function(){
       var cells = row.querySelectorAll("td");
       if (cells.length >= 3) {
         html += '<tr>';
-        html += '<td style="padding:8px;border:1px solid #d8e1ee;text-align:center;">' + cells[0].textContent.trim() + '</td>';
-        html += '<td style="padding:8px;border:1px solid #d8e1ee;font-weight:900;color:#102f70;">' + cells[1].textContent.trim() + '</td>';
-        html += '<td style="padding:8px;border:1px solid #d8e1ee;">' + cells[2].textContent.trim() + '</td>';
-        html += '</tr>';
+        html += '<td style="padding:12px 10px;border:1px solid #d8e1ee;text-align:center;font-size:21px;font-weight:750;color:#18233a;">' + cells[0].textContent.trim() + '</td>';
+html += '<td style="padding:12px 12px;border:1px solid #d8e1ee;font-size:21px;font-weight:900;color:#102f70;white-space:nowrap;">' + cells[1].textContent.trim() + '</td>';
+html += '<td style="padding:12px 14px;border:1px solid #d8e1ee;font-size:21px;font-weight:800;color:#18233a;line-height:1.35;">' + cells[2].textContent.trim() + '</td>';        html += '</tr>';
       }
     });
 
